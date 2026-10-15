@@ -1,0 +1,65 @@
+name: Bug report
+description: Something in Databee does not work as it should
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue is public. Remove host names, user names, SQL and data you do not want to share.
+        Opened from **Help | Send Feedback to Databee | Report a Bug...** in the IDE, the environment is filled in for you.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What did you see, and what did you expect to see instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Connect to a MySQL 8 data source
+        2. Open a table from the database tree
+        3. ...
+    validations:
+      required: true
+  - type: dropdown
+    id: database
+    attributes:
+      label: Database
+      multiple: true
+      options:
+        - MySQL
+        - MariaDB
+        - PostgreSQL
+        - Oracle
+        - SQL Server
+        - SQLite
+        - ClickHouse
+        - TiDB
+        - OceanBase
+        - YugabyteDB
+        - MongoDB
+        - Redis / Valkey
+        - Not related to a database
+        - Other
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error message or stack trace
+      description: Paste it here, or attach idea.log (Help | Show Log in Explorer).
+      render: text
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Plugin, IDE, OS and Java versions.
+      placeholder: |
+        - Plugin: 2026.4.0
+        - IDE: IntelliJ IDEA 2026.2 (IU-262.1234)
+        - OS: Windows 11 amd64
+        - Java: 21.0.8
+    validations:
+      required: true
