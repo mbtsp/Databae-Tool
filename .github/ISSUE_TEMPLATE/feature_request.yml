@@ -1,0 +1,28 @@
+name: Feature request
+description: Suggest something Databee should do, or do differently
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do
+      description: The task or problem, not the solution yet. "I want to compare two schemas before a release" helps more than "add a diff button".
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: How you would like it to work
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What you do today instead
+      description: A workaround, another tool, or nothing.
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Plugin and IDE versions, filled in when opened from the IDE.
