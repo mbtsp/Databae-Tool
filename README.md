@@ -1,3 +1,4 @@
+## The latest version[2026.5.0](https://plugins.jetbrains.com/plugin/19161-database-tool)
 **Databee** is a database client that lives in your IDE: browse your schemas, write SQL the editor understands, run it, and edit the results in place. Works in IntelliJ IDEA and other IntelliJ-based IDEs.
 
 **Databases:** MySQL, MariaDB, TiDB, and OceanBase (MySQL mode); PostgreSQL, CockroachDB, and YugabyteDB; Oracle, Microsoft SQL Server, SQLite, and ClickHouse; MongoDB; Redis and Valkey.
@@ -31,7 +32,7 @@
 How to use: open the Databee window → add a data source → open a SQL file → pick the connection → Ctrl+Enter.
 
 [GitHub](https://github.com/mbtsp/Databae-Tool) · [Issues](https://github.com/mbtsp/Databae-Tool/issues)
-## The latest version[2026.5.0](https://plugins.jetbrains.com/plugin/19161-database-tool)
+
 idea Database plugin
 demo:
  ![分页](https://user-images.githubusercontent.com/31949635/179384725-3de56feb-0d99-4a9f-a649-14ff9e59f4da.gif)
